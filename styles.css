@@ -3,7 +3,6 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* background: linear-gradient(135deg, #e0eafc, #cfdef3); */
     background-image: url('background.jpeg'); /* Replace with your image URL */
     background-size: cover;
     background-attachment: fixed;
@@ -16,9 +15,8 @@ header {
     padding: 1rem;
     background-image: 
         url('27570.png');
-    /* background: linear-gradient(135deg, #6a11cb, #2575fc);  */
     color: white;
-    /* border-bottom: 5px solid #2575fc; */
+    border-bottom: 5px solid #2575fc;
 }
 
 
