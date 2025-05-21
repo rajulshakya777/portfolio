@@ -61,6 +61,88 @@
             margin: 0 auto; /* Center the container horizontally */
             flex-wrap: wrap;
         }
+
+        /* Responsive Design */
+        @media (max-width: 900px) {
+            .contact-buttons {
+                flex-direction: column;
+                width: 100%;
+                margin: 0 auto;
+            }
+            .contact-buttons a, .contact-buttons button {
+                margin-bottom: 10px;
+                margin-right: 0;
+                width: 90%;
+                justify-content: center;
+            }
+            .skills-container {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            .skills-column {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            .experience, .education-entry, .project {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .company-logo, .education-logo, .project-image {
+                margin-bottom: 10px;
+                max-width: 120px;
+                width: 100%;
+                height: auto;
+            }
+        }
+        @media (max-width: 600px) {
+            body {
+                font-size: 15px;
+            }
+            h1, h2, h3 {
+                font-size: 1.2em;
+            }
+            .section {
+                padding: 10px;
+            }
+            .skills-container {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            .skills-column {
+                width: 100%;
+                margin-bottom: 15px;
+            }
+            .experience, .education-entry, .project {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .company-logo, .education-logo, .project-image {
+                max-width: 100px;
+                width: 100%;
+                height: auto;
+            }
+        }
+        .skills-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .skills-column {
+            flex: 1 1 30%;
+            min-width: 220px;
+            margin: 10px;
+        }
+        .experience, .education-entry, .project {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 25px;
+        }
+        .company-logo, .education-logo, .project-image {
+            width: 140px;
+            height: 140px;
+            object-fit: contain;
+            margin-right: 20px;
+        }
     </style>
 </head>
 <body>
@@ -94,16 +176,20 @@
     <section id="about-me" class="section">
         <h2>About Me</h2>
         <p>
-            I am a highly motivated software engineer with a strong foundation in backend development, cloud technologies, and machine learning. Currently pursuing an MS in IT Innovation at the University of Nebraska, Omaha (4.0/4.0 GPA), I bring nearly three years of experience in building scalable and efficient software solutions.
+            Software Engineer with 3+ years of experience in building end-to-end software applications from scratch, quickly adapting to new technologies to translate business ideas into technical solutions.
         </p>
         <p>
-            Previously, I worked as a Software Engineer at Jio, where I contributed to the development of large-scale retail e-commerce solutions, ensuring high availability while handling over 1,500 requests per second. Additionally, I co-founded <a href="https://skysrang.com" target="_blank">SkyRang</a>, an end-to-end web platform for online decoration services, which served 700+ users across three cities in India.
+            <strong>🎓 Education</strong><br>
+            MS in IT Innovation – University of Nebraska, Omaha USA (4.0/4.0 GPA)<br>
+            B.Tech in Electronics Engineering – IIT (Indian Institute of Technology), Roorkee INDIA
         </p>
         <p>
-            As an AI & Software Engineering Intern at Assembli AI, I optimized construction workflows by reducing cost estimation and proposal generation time from over 50 hours to mere minutes. My expertise spans backend development, object-oriented programming, SQL and NoSQL databases, cloud technologies, and machine learning.
-        </p>
-        <p>
-            I hold a B.Tech in Electronics Engineering from IIT Roorkee, where I built a strong foundation in data structures, algorithms, and core computer science principles. Passionate about solving complex problems, I thrive on designing scalable and efficient solutions that drive innovation.
+            <strong>💼 Professional Achievements</strong>
+            <ul>
+                <li><strong>AI & Software Engineering Intern @ Assembli AI</strong>: Built AI Agents, optimized construction workflows reducing cost estimation and proposal generation time from 50+ hours to minutes.</li>
+                <li><strong>Full-Stack Developer @ SkyRang (Personal Initiative)</strong>: Built an end-to-end web platform for online decoration services, serving 700+ users across 3 cities in India. (<a href="https://skysrang.com" target="_blank">Visit: https://skysrang.com</a>)</li>
+                <li><strong>Software Engineer @ Jio</strong>: Around 3 years of experience developing large-scale retail e-commerce software solutions, ensuring high availability and handling 1,500+ requests per second.</li>
+            </ul>
         </p>
     </section>
 
@@ -172,10 +258,10 @@
         <div>
             <h3>Software Engineer Intern</h3>
             <p>Assembli AI, Omaha (NE, USA)</p>
-            <p>Jan 2025 –  Present</p>
+            <p>Jan 2025 – Present</p>
             <ul>
-                <li>One of the early AI engineer at Assembli AI, optimizing construction workflows with AI- driven solutions and developing the Assembli web platform using ReactJS, Python, and SQL.</li>
-                <li>Implemented and analyzed PDF table extraction methods, including Large Language Models (LLMs) such as ClaudeAI, OpenAI APIs, and DocumentAI etc., to improve data processing efficiency.</li>
+                <li>Early AI team member at Assembli AI. Built Assembli AI’s end-to-end pricing pipeline using LLMs (Claude, OpenAI) and Python tools to extract, process, standardize, and structure invoice data into a database, reducing cost estimation time from 50+ hours to minutes.</li>
+                <li>Developed AI agent for project-specific Q&A, including features like material grade selection for end users.</li>
             </ul>            
         </div>
     </div>
@@ -243,7 +329,7 @@
         <img src="uno-logo.png" alt="University Logo" class="education-logo">
         <div class="education-details">
             <p><strong>University of Nebraska, Omaha (USA)</strong> - Master of Science, IT Innovation</p>
-            <p><strong>GPA 4.0/4 </strong> (Jan 2024 – present)</p>
+            <p><strong>GPA 4.0/4 </strong> (Jan 2024 – May 2025)</p>
         </div>
     </div>
 
