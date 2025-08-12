@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajul Shakywar's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Style for the buttons */
+        button {
+            font-size: 16px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            display: inline-flex;
+            align-items: center;
+            margin-right: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button i {
+            margin-right: 8px;
+        }
+
+        /* Button colors */
+        .email-btn {
+            background-color: #4CAF50; /* Green */
+        }
+
+        .linkedin-btn {
+            background-color: #0077b5; /* LinkedIn Blue */
+        }
+
+        .github-btn {
+            background-color: #333; /* GitHub Dark */
+        }
+
+        .leetcode-btn {
+            background-color: #FFA500; /* LeetCode Orange */
+        }
+
+        .address-btn {
+            background-color: #808080; /* Grey */
+        }
+
+        /* Hover effect */
+        button:hover {
+            opacity: 0.8;
+        }
+
+        /* Center and evenly space the buttons */
+        .contact-buttons {
+            display: flex;
+            /* justify-content: space-around; */
+            align-items: center;
+            justify-content: space-between;
+            width: 60%; /* Control the width of the button container */
+            margin: 0 auto; /* Center the container horizontally */
+            flex-wrap: wrap;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 900px) {
+            .contact-buttons {
+                flex-direction: column;
+                width: 100%;
+                margin: 0 auto;
+            }
+            .contact-buttons a, .contact-buttons button {
+                margin-bottom: 10px;
+                margin-right: 0;
+                width: 90%;
+                justify-content: center;
+            }
+            .skills-container {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            .skills-column {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            .experience, .education-entry, .project {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .company-logo, .education-logo, .project-image {
+                margin-bottom: 10px;
+                max-width: 120px;
+                width: 100%;
+                height: auto;
+            }
+        }
+        @media (max-width: 600px) {
+            body {
+                font-size: 15px;
+            }
+            h1, h2, h3 {
+                font-size: 1.2em;
+            }
+            .section {
+                padding: 10px;
+            }
+            .skills-container {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            .skills-column {
+                width: 100%;
+                margin-bottom: 15px;
+            }
+            .experience, .education-entry, .project {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .company-logo, .education-logo, .project-image {
+                max-width: 100px;
+                width: 100%;
+                height: auto;
+            }
+        }
+        .skills-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .skills-column {
+            flex: 1 1 30%;
+            min-width: 220px;
+            margin: 10px;
+        }
+        .experience, .education-entry, .project {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 25px;
+        }
+        .company-logo, .education-logo, .project-image {
+            width: 140px;
+            height: 140px;
+            object-fit: contain;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Profile Photo -->
+    <!-- <header>
+        <img src="profile-pic.jpg" alt="Profile Photo" class="profile-photo">
+        <h1 style="font-family: Comic Sans MS, Comic Sans, cursive;">Rajul Shakywar</h1>
+    </header> -->
+    <header>
+        <img src="profile-pic1.jpg" alt="Profile Photo" class="profile-photo">
+        <h1 style="font-family: Comic Sans MS, Comic Sans, cursive;">Rajul Shakywar</h1>
+        <p class="contact-buttons" style="margin-top: 25px;">
+            <a href="mailto:rshakywar@unomaha.edu">
+                <button class="email-btn"><i class="fas fa-envelope"></i> Email</button>
+            </a>
+            <button class="address-btn"><i class="fas fa-home"></i> Omaha (NE), USA</button>
+            <a href="https://www.linkedin.com/in/rajul-shakywar-ba44361a0/" target="_blank">
+                <button class="linkedin-btn"><i class="fab fa-linkedin"></i> LinkedIn</button>
+            </a>
+            <a href="https://github.com/rajulshakya777" target="_blank">
+                <button class="github-btn"><i class="fab fa-github"></i> GitHub</button>
+            </a>
+            <a href="https://leetcode.com/u/rsps2329/" target="_blank">
+                <button class="leetcode-btn"></i> LeetCode</button>
+            </a>
+        </p>
+    </header>
+    
+    
+    <!-- About Me -->
+    <section id="about-me" class="section">
+        <h2>About Me</h2>
+        <p>
+            <strong>🎓 Education</strong><br>
+            MS in IT Innovation – University of Nebraska, Omaha USA (4.0/4.0 GPA)<br>
+            B.Tech in Electronics Engineering – IIT (Indian Institute of Technology), Roorkee INDIA
+        </p>
+        <p>
+            <strong>💼 Professional Achievements</strong>
+            <ul>
+                <li><strong>AI & Software Engineering Intern @ Assembli AI</strong>: Built AI Agents, optimized construction workflows reducing cost estimation and proposal generation time from 50+ hours to minutes.</li>
+                <li><strong>Full-Stack Developer @ SkyRang (Personal Initiative)</strong>: Built an end-to-end web platform for online decoration services, serving 700+ users across 3 cities in India. (<a href="https://skysrang.com" target="_blank">Visit: https://skysrang.com</a>)</li>
+                <li><strong>Software Engineer @ Jio</strong>: Around 3 years of experience developing large-scale retail e-commerce software solutions, ensuring high availability and handling 1,500+ requests per second.</li>
+            </ul>
+        </p>
+    </section>
+
+
+
+       <!-- Programming Skills -->
+    <section id="programming-skills" class="section">
+        <h2>Core competencies</h2>
+        <div class="skills-container">
+            <div class="skills-column">
+                <h3 style="margin-bottom: 5px;">Programming Languages</h3>
+                    Java | C++ | Python
+            </div>
+            <div class="skills-column">
+                <h3>Frameworks</h3>
+                    SpringBoot | JSP (Servlet) | Hibernate | JUnit
+            </div>
+            <div class="skills-column">
+                <h3>Frontend Skills</h3>
+                    HTML | CSS | Bootstrap
+                    <br>
+                    Javascript | ReactJS 
+                    
+            </div>
+        </div>
+        <div class="skills-container">
+            <div class="skills-column">
+                <h3 style="margin-bottom: 5px;">Technologies and Tools</h3>
+                    Git | Apache Kafka | Machine Learning
+                    <br>
+                    Large language models (LLMs) | REST APIs 
+                    <br>
+
+                    AWS | Docker | Kubernetes | Openshift
+                </ul>
+            </div>
+            <div class="skills-column">
+                <h3>Databases</h3>
+                    Redis | MySQL | MongoDB 
+                    <br>
+                    Cassandra | Neo4j
+            </div>
+            <div class="skills-column">
+                <h3>Other Skills</h3>
+                Data Structures & Algorithms 
+                <br>
+                Object Oriented Programming
+                <br>
+                System Design | Design patterns
+                <br>
+                Low/High Level Design | Microservices 
+                <br>
+                Agile Methodologies | SOLID Principles
+                <br>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Experience -->
+    <section id="work-experience" class="section">
+        <h2>Work Experience</h2>
+        <!-- Experience -->
+    <div class="experience">
+        <img src="Sera_logo.jpeg" alt="Company Logo" class="company-logo">
+        <div>
+            <h3>Research and Development Intern</h3>
+            <p>Sera Digital Corps, Omaha (NE, USA)</p>
+            <p>May 2025 – Present</p>
+            <ul>
+                <li>Building cross-functional, CMMC-compliant applications using WinDev technology following DOD standards.</li>
+            </ul>            
+        </div>
+    </div>
+    <div class="experience">
+        <img src="assembli_ai_logo.jpeg" alt="Company Logo" class="company-logo">
+        <div>
+            <h3>Software Engineer Intern</h3>
+            <p>Assembli AI, Omaha (NE, USA)</p>
+            <p>Jan 2025 – Present</p>
+            <ul>
+                <li>Early AI team member at Assembli AI. Built Assembli AI’s end-to-end pricing pipeline using LLMs (Claude, OpenAI) and Python tools to extract, process, standardize, and structure invoice data into a database, reducing cost estimation time from 50+ hours to minutes.</li>
+                <li>Developed AI agent for project-specific Q&A, including features like material grade selection for end users.</li>
+            </ul>            
+        </div>
+    </div>
+    <div class="experience">
+        <img src="uno-logo.png" alt="Company Logo" class="company-logo">
+        <div>
+            <h3>Student Researcher</h3>
+            <p>University of Nebraska, Omaha (NE, USA)</p>
+            <p>Feb 2024 – May 2024</p>
+            <ul>
+                <li>Developed various machine learning models on Kubernetes clusters utilizing multiple GPUs to achieve optimized performance and scalability.</li>
+                <li>Developed and fine-tuned large language models (LLMs) for advanced natural language processing tasks.</li>
+            </ul>
+                      
+        </div>
+    </div>
+    <div class="experience">
+        <img src="jio-logo.png" alt="Company Logo" class="company-logo">
+        <div>
+            <h3>Software Development Engineer</h3>
+            <p>Jio Platforms Pvt. Ltd (Bangalore, India)</p>
+            <p>July 2021 – Jan 2024</p>
+            <ul>
+                <li>Designed and developed a centralized cache management application, CAAS, to manage 800GB of cache data for 4 internal teams.</li>
+                <li>Enabled high availability, data persistence, and seamless scaling to handle up to 1,500 requests per second, with integration as a separate cache layer within the application.</li>
+                <li>Managed deployment activities and resolved exceptions to ensure smooth operation of FeatureHub, a feature toggling application supporting 5 internal teams.</li>
+                <li>Reduced Change Lead Time (CLT) for toggling features by up to 75%, enhancing development efficiency.</li>
+                <li>Developed various UI features for JioMartPartner, a high-traffic wholesale shopping application, and resolved critical code bugs to deliver a high-quality user experience in an agile environment.</li>
+            </ul>            
+        </div>
+    </div>
+        <!-- Add more experiences as needed -->
+    </section>
+
+    <section id="internship-experience" class="section">
+        <h2>Internship Experiences</h2>
+        <div class="experience">
+            <img src="vyorius-logo.jpeg" alt="University Logo" class="company-logo">
+            <div>
+                <h3>Machine Learning Intern</h3>
+                <p><strong>Vyorius Drones LLP Pvt. Ltd</strong></p>
+                <p>Feb 2020 – April 2020  | New Delhi, India</p>
+                <p><strong>AI based drone delivery</strong> :  Applied machine learning models to identify optimal locations on remote Indian islands for establishing over 150 drone hubs and stations to support urgent medical supply deliveries. (<a href="https://github.com/rajulshakya777/Optimal-Geographical-Locations-For-Setting-up-Hubs-and-Stations">GitHub</a>).</p>
+            </div>
+        </div>
+        <div class="experience">
+            <img src="techvolt-logo.jpeg" alt="University Logo" class="company-logo">
+            <div>
+                <h3>Machine Learning Intern</h3>
+                <p><strong>Techvolt Software Pvt. Ltd</strong></p>
+                <p>July 2020 – Aug 2020  | Coimbatore, India</p>
+                <p><strong>Vehicle price prediction</strong> :  Predicted second and third-hand car sale prices based on various features and parameters such as mileage,
+                    fuel type, engine capacity etc., using machine learning modelling, achieved the accuracy of 0.7101 R2 score
+                    value.</p>
+            </div>
+        </div>
+        <!-- Add more experiences as needed -->
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="section">
+        <h2>Education</h2>
+        <!-- Education Entries -->
+    <div class="education-entry">
+        <img src="uno-logo.png" alt="University Logo" class="education-logo">
+        <div class="education-details">
+            <p><strong>University of Nebraska, Omaha (USA)</strong> - Master of Science, IT Innovation</p>
+            <p><strong>GPA 4.0/4 </strong> (Jan 2024 – May 2025)</p>
+        </div>
+    </div>
+
+    <div class="education-entry">
+        <img src="iitr-logo.png" alt="IIT Roorkee Logo" class="education-logo">
+        <div class="education-details">
+            <p><strong>Indian Institute Of Technology (IIT), Roorkee (India)</strong> - Bachelors of Technology, Electronics and Communication Engineering</p>
+            <p><strong>Grades 72/100 </strong>(July 2017 – May 2021)</p>
+        </div>
+    </div>
+
+    <div class="education-entry">
+        <img src="jnv-logo.png" alt="JNV Guna Logo" class="education-logo">
+        <div class="education-details">
+            <p><strong>Central Board of Secondary Education (India)</strong></p>
+            <p><strong>Grades 9.8/10 </strong>(July 2008 – May 2015)</p>
+        </div>
+    </div>
+
+        <!-- Add more education details as needed -->
+    </section>
+
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+        <h2>Other Projects</h2>
+        <div class="project">
+            <img src="skyrang-logo.png" alt="Project Image" class="project-image">
+            <div>
+                <h3>Skyrang - Online Decoration Service</h3>      
+                <ul>
+                    <li>Developed an online decoration service web application from scratch and deployed it on AWS, currently serving over 200 users across 2 cities in India </li>
+                    <li>Successfully integrated various features into the application, providing seamless user experiences and improving engagement.</li>
+                    <li><a href="http://skysrang.com" target="_blank">Visit: https://skysrang.com</a></li>
+                </ul>
+                
+            </div>
+        </div>
+        <div class="project">
+            <img src="cancer.jpeg" alt="Project Image" class="project-image">
+            <div>
+                <h3>Cancer subtype prediction using AI</h3>
+                <ul>
+                    <li>Developed a Python tool, C3MOD (Cancer Clustering and Characterization using Multi-Omics Data), for identifying cancer subtypes in multi-omics data using unsupervised clustering algorithms.</li>
+                    <li>Enabled a variety of analyses on the identified subtypes, such as survival analysis, mutation analysis, stage analysis, and immune characterization.</li>
+                    <li>Provided flexibility for customized analysis, allowing users to select the cancer type, algorithm, parameters, and analyses based on their research focus.</li>
+                    <li>Designed the tool to be adaptable to different research needs, supporting comprehensive exploration and characterization of cancer data.</li>
+                    <li><a href="https://github.com/rajulshakya777/C3MOD" target="_blank">Link: GitHub-C3MOD</a></li>
+                </ul>
+                
+            </div>
+        </div>
+        <div class="project">
+            <img src="iot-logo.png" alt="Project Image" class="project-image">
+            <div>
+                <h3>IOT-based secured parcel delivery box</h3>
+                <ul>
+                    <li>Developed an IoT-based Delivery Box System that provides secure, trackable, and theft-resistant electronic parcel delivery for the safe exchange of confidential documents and valuable assets.</li>
+                    <li>Integrated real-time tracking and monitoring features to ensure secure delivery and retrieval of parcels.</li>
+                    <li>Implemented advanced security measures, including remote access control and theft detection, to safeguard valuable shipments.</li>
+                    <li>Designed the system to be easily adaptable for various use cases involving secure asset exchange in both personal and business contexts.</li>
+                </ul>
+                
+            </div>
+        </div>
+        <div class="project">
+            <img src="inverted-pendulum.png" alt="Project Image" class="project-image">
+            <div>
+                <h3>Inverted pendulum</h3>
+                <ul>
+                    <li>Developed an inverted pendulum system using Arduino and encoders, capable of balancing in a vertically straight position.</li>
+                    <li>Implemented the PID (Proportional-Integral-Derivative) algorithm for precise control and stability of the pendulum.</li>
+                    <li>Utilized encoders for real-time angle measurement and feedback to maintain balance.</li>
+                </ul>                
+            </div>
+        </div>
+        <div class="project">
+            <img src="sot-mrmam.png" alt="Project Image" class="project-image">
+            <div>
+                <h3>ML based modeling of Spin-Orbit Torque</h3>
+                <ul>
+                    <li>Developed a simulation tool to predict the performance of SOT-MRAM devices, accounting for manufacturing tolerances and uncertainties.</li>
+                    <li>Utilized polynomial chaos approaches to model and quantify the effects of uncertainties in SOT-MRAM device performance.</li>
+                    <li>Applied neural network techniques to conduct a comprehensive reliability analysis of SOT-MRAM devices in memory architectures.</li>
+                    <li>Achieved a high accuracy with a 0.000127 RMSE value after 100 epochs and 6 neurons, demonstrating the effectiveness of the model.</li>
+                </ul>
+                
+            </div>
+        </div>
+        <!-- <div class="project">
+            <img src="gpu.png" alt="Project Image" class="project-image">
+            <div>
+                <h3>ML Jobs on Kubernetes</h3>
+                <p>Designed and implemented an IOT based Delivery box system...</p>
+            </div>
+        </div> -->
+        <div class="project">
+            <img src="self-balancing-bot.png" alt="Project Image" class="project-image">
+            <div>
+                <h3>Self balancing bot</h3>
+                <ul>
+                    <li>Developed a two-wheeled self-balancing robot model that moves forward and backward to maintain a vertical position.</li>
+                    <li>Implemented a microcontroller along with PID algorithm and Kalman filter to control and stabilize the robot’s movement.</li>
+                    <li>Ensured precise balance and control through real-time sensor feedback and algorithm optimization.</li>
+                </ul>
+                
+            </div>
+        </div>
+        <div class="project">
+            <img src="laser-img.jpg" alt="Project Image" class="project-image">
+            <div>
+                <h3>Laser based security system</h3>
+                <ul>
+                    <li>Developed a surveillance security system based on multiple reflections from mirrors using a low-frequency laser emitting module and a Light Dependent Resistor (LDR).</li>
+                    <li>Implemented the circuit using digital logic design to detect and trigger security alerts based on the reflection patterns.</li>
+                </ul>
+                
+            </div>
+        </div>
+        <!-- Add more projects as needed -->
+    </section>
+
+    <!-- Honors and Achievements -->
+    <section id="honors-achievements" class="section">
+        <h2>Honors and Achievements</h2>
+        <div class="achievement">
+            <h3>Work Performance Grades (07/2021 – 01/2024)</h3>
+            <ul>
+                <li>Got A+ and A grades for two consecutive years at Jio for significant contributions in software development.</li>
+                <li>Interviewed over 30 candidates for Level-1 technical interviews for senior software engineer positions within my team.</li>
+            </ul>
+        </div>
+        <div class="achievement">
+            <h3>IIT-JEE (Advanced) 2017</h3>
+            <ul>
+                <li>Secured a position in the top 0.009% in the highly competitive JEE Advanced exam, with over 1.2 million students vying for admission into prestigious Indian Institutes of Technology (IITs).</li>
+            </ul>
+        </div>
+        <div class="achievement">
+            <h3>Dakshana Foundation Scholarship (06/2014 – 04/2016)</h3>
+            <ul>
+                <li>Ranked in the top 5% out of 5000 candidates in the Dakshana Selection Test (DST) across Navodaya schools nationwide and awarded the Dakshana Scholarship for a two-year residential coaching for JEE Advanced.</li>
+                <li>Mentored in JEE Freshman Assistance Programme-2018, received volunteer appreciation for Dakshana Selection Test coordination, and conducted inspire sessions in government schools.</li>
+            </ul>
+        </div>
+        <!-- Add more honors and achievements as needed -->
+    </section>
+
+    <!-- Training and Courses -->
+    <section id="training-courses" class="section">
+        <h2>Training and Courses</h2>
+        <ul>
+            <li>Introduction to software engineering : University of Nebraskska</li>
+            <li>Advanced system analysis and design : University of Nebraskska</li>
+            <li>NoSQL and Big data : University of Nebraskska</li>
+            <li>Introduction to Algorithms and Analysis, Introduction to Database Systems : NPTEL</li>
+            <li>Object Oriented Programming : IIT Roorkee</li>
+            <li>Data Structures : IIT Roorkee</li>
+            <li>Computer Architecture and Microprocessors : IIT Roorkee</li>
+            <li>Probability and Statistics : IIT Roorkee</li>
+            <li>Embedded System Design : IIT Roorkee</li>
+            <li>QEeats - Food ordering app (Crio.do): Built Java backend for food ordering app using Spring Boot and Redis : Reliance Jio</li>
+            <li>Machine Learning and Data Analysis using Python : EICT Academy IIT Roorkee</li>
+            <li>Introduction to Containers with Docker, Kubernetes & OpenShift : IBM (Coursera)</li>
+            <li>Java Essential Training: Objects and APIs, Introduction to Data Structures & Algorithms in Java, Learning Bitcoin and Other Cryptocurrencies: LinkedIn Learning</li>
+            <li>Ethical Hacking & Cyber Security : Udemy</li>
+        </ul>
+    </section>
+
+    <!-- Positions of Responsibility and Extracurriculars -->
+    <section id="positions-extracurriculars" class="section">
+        <h2>Positions of Responsibility and Extracurriculars</h2>
+        <ul>
+            <li>Received volunteer appreciation for coordinating exams three times and conducting over 10 Inspire sessions for the Dakshana Scholarship Program, supporting economically disadvantaged students in government schools.</li>
+            <li>Led the cricket team at my company and secured the runner-up position in Jio's cricket tournament.</li>
+        </ul>        
+    </section>
+
+    <!-- Hobbies -->
+    <section id="hobbies" class="section">
+        <h2>Hobbies</h2>
+        <ul>
+            <li>Badminton</li>
+            <li>Strategic Defense analysis</li>
+            <li>Traveling</li>
+            <!-- Add more hobbies as needed -->
+        </ul>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

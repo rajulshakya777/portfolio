@@ -1,0 +1,147 @@
+body {
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-size: large;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background: linear-gradient(135deg, #e0eafc, #cfdef3); */
+    background-image: url('background.jpeg'); /* Replace with your image URL */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 1rem;
+    background-image: url('27570.png');
+    /* background: linear-gradient(135deg, #6a11cb, #2575fc); */
+    color: white;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    margin: 0.5rem 0;
+}
+
+p {
+    margin: 0.5rem 0;
+}
+
+.section {
+    padding: 2rem;
+    margin: 0.6rem auto;
+    max-width: 1350px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    border-bottom: 3px solid #2575fc;
+    padding-bottom: 0.5rem;
+    color: #2575fc;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 0.5rem 0;
+    display: flex;
+    align-items: center;
+}
+
+ul li::before {
+    content: '•';
+    color: #2575fc;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}
+
+.experience, .project {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.company-logo, .project-image {
+    width: 50px;
+    height: 50px;
+    margin-right: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    margin: 0;
+}
+
+.education-entry {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.education-logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .experience, .project {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.skills-column {
+    flex: 1;
+    margin: 0 1rem;
+}
+
+.skills-column h3 {
+    color: #2575fc;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    /* border-bottom: 3px solid #2575fc; */
+    /* padding-bottom: 0.5rem; */
+}
+
+.skills-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-column li {
+    margin: 0.5rem 0;
+}
+
+@media (max-width: 768px) {
+    .skills-container {
+        flex-direction: column;
+    }
+    .skills-column {
+        margin: 0 0 1rem 0;
+    }
+}
