@@ -7,17 +7,17 @@ import '../assets/styles/Expertise.scss';
 
 const stackFull = [
     'Python','Java','C#','C++','HTML5','CSS','Bootstrap','JavaScript','React.js',
-    'Flask','Spring Boot','ASP.NET','JSP/Servlets','Hibernate','JUnit','Mockito','FastAPI',
-    'MySQL','MongoDB','Redis','Cassandra'
+    'Flask','Spring Boot','ASP.NET','JSP/Servlets','Hibernate','JUnit','Mockito',
+    'MySQL','MongoDB','Redis','Cassandra',
+    'Data Structures & Algorithms','System Design','Object Oriented Design','Solid Principles','Design Patterns','Microservices','RESTful APIs'
 ];
 
 const stackAI = [
-    'Machine Learning','Generative AI','LLMs','AI Agents','RAG','CAG','TensorFlow','PyTorch','LangChain','LangGraph','vLLM','Vector Embeddings','Data Analysis','OCR'
+    'Machine Learning','Generative AI','LLMs','AI Agents','RAG','CAG','TensorFlow','PyTorch','LangChain','LangGraph','vLLM','Vector Embeddings','Data Analysis','OCR','FastAPI'
 ];
 
 const stackCloud = [
-    'AWS','Docker','Kubernetes','OpenShift','Git','Apache Kafka','RESTful APIs','CI/CD Pipelines','Data Structures & Algorithms',
-    'System Design','OOD','SOLID','Design Patterns','Microservices','Agile'
+    'AWS','Docker','Kubernetes','OpenShift','Git','Apache Kafka','CI/CD Pipelines','Agile Methodologies','Waterfall'
 ];
 
 function Expertise() {
@@ -38,7 +38,7 @@ function Expertise() {
 
                 <div className="skill">
                     <FontAwesomeIcon icon={faReact} size="3x"/>
-                    <h3>Full-Stack Engineering & System designing</h3>
+                    <h3>Full-Stack Engineering & System Designing</h3>
                     <p>Experienced in developing, designing, and deploying large-scale, distributed full-stack applications from scratch, following best engineering practices and design patterns, serving millions of users and handling over 1.5k requests per second.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech Stack:</span>
@@ -48,7 +48,7 @@ function Expertise() {
 
                 <div className="skill">
                     <FontAwesomeIcon icon={faDocker} size="3x"/>
-                    <h3>Software Engineering, Cloud & DevOps</h3>
+                    <h3>Cloud, DevOps & Delivery</h3>
                     <p>Experienced in managing the full SDLC, containerization, and cloud deployments, ensuring scalability, smooth maintenance, and performance optimization.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech Stack:</span>
