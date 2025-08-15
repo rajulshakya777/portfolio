@@ -1,7 +1,7 @@
 
 import '../assets/styles/Contact.scss';
 
-
+// 
 function Contact() {
   // Use Formspree endpoint for direct HTML POST
   const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mnnzrowy';
