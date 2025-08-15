@@ -4,7 +4,7 @@ import {
   Timeline,
   Expertise,
   Project,
-  Contact,
+    Connect,
     Education,
   Navigation,
   Footer,
@@ -40,7 +40,7 @@ function App() {
             <Education/>
             <Courses/>
             <Hobbies/>
-            <Contact/>
+            <Connect/>
         </FadeIn>
         <Footer />
     </div>

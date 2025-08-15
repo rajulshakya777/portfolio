@@ -1,18 +1,18 @@
 
-import '../assets/styles/Contact.scss';
+import '../assets/styles/Connect.scss';
 
 // 
-function Contact() {
+function Connect() {
   // Use Formspree endpoint for direct HTML POST
   const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mnnzrowy';
   return (
-    <div id="contact">
+  <div id="connect">
       <div className="items-container">
-        <div className="contact_wrapper">
-          <h1>Contact</h1>
-          <p className="contact-instructions">Reach me at <a href="mailto:rshakywar@nebraska.edu">rshakywar@nebraska.edu</a> or through the form.</p>
+  <div className="connect_wrapper">
+          <h1>Connect</h1>
+          <p className="connect-instructions">Reach me at <a href="mailto:rshakywar@nebraska.edu">rshakywar@nebraska.edu</a> or through the form.</p>
           <form
-            className="contact-form custom-contact-form full-width-form"
+            className="connect-form custom-connect-form full-width-form"
             action={FORMSPREE_ENDPOINT}
             method="POST"
             autoComplete="off"
@@ -28,7 +28,7 @@ function Contact() {
               gap: 18
             }}
           >
-            <label htmlFor="name" className="contact-label">Your Name</label>
+            <label htmlFor="name" className="connect-label">Your Name</label>
             <input
               type="text"
               id="name"
@@ -45,7 +45,7 @@ function Contact() {
                 marginBottom: 10
               }}
             />
-            <label htmlFor="email" className="contact-label">Email / Phone</label>
+            <label htmlFor="email" className="connect-label">Email / Phone</label>
             <input
               type="text"
               id="email"
@@ -67,7 +67,7 @@ function Contact() {
                 marginBottom: 10
               }}
             />
-            <label htmlFor="message" className="contact-label">Message</label>
+            <label htmlFor="message" className="connect-label">Message</label>
             <textarea
               id="message"
               name="message"
@@ -109,4 +109,4 @@ function Contact() {
   );
 }
 
-export default Contact;
+export default Connect;

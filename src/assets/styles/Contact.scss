@@ -1,54 +1,54 @@
-.contact-label {
+.connect-label {
   font-weight: 600;
   margin-bottom: 4px;
   color: #181818;
 }
-.dark-mode .contact-label {
+.dark-mode .connect-label {
   color: #fff !important;
 }
-.contact-form,
-.contact-form input,
-.contact-form textarea,
-.contact-form button {
+.connect-form,
+.connect-form input,
+.connect-form textarea,
+.connect-form button {
   background: #fff !important;
   color: #181818 !important;
   border-color: #bbb !important;
   box-shadow: none !important;
 }
-.contact-form input,
-.contact-form textarea {
+.connect-form input,
+.connect-form textarea {
   background: #fff !important;
   color: #181818 !important;
   border: 1.5px solid #bbb !important;
 }
-.contact-form button {
+.connect-form button {
   background: #6c63ff !important;
   color: #fff !important;
   border: none !important;
 }
-.contact-form input::placeholder,
-.contact-form textarea::placeholder {
+.connect-form input::placeholder,
+.connect-form textarea::placeholder {
   color: #888 !important;
   opacity: 1 !important;
 }
-.contact-instructions a {
+.connect-instructions a {
   color: inherit !important;
   text-decoration: underline !important;
 }
-.contact-instructions a {
+.connect-instructions a {
   color: inherit !important;
 }
-.contact-instructions {
+.connect-instructions {
   color: #181818;
 }
-.dark-mode .contact-instructions {
+.dark-mode .connect-instructions {
   color: #fff !important;
 }
-.dark-mode .contact_wrapper h1 {
+.dark-mode .connect_wrapper h1 {
   color: var(--text-color, #f3f3f7) !important;
 }
-.dark-mode .contact-form textarea,
-.dark-mode .contact-form input {
+.dark-mode .connect-form textarea,
+.dark-mode .connect-form input {
   color: #fff !important;
   background: #353542 !important;
   border: 1.5px solid #444556 !important;
@@ -56,13 +56,13 @@
   box-shadow: 0 4px 16px 0 rgba(0,0,0,0.10), 0 1.5px 0 0 #444556;
   transition: box-shadow 0.2s, border-color 0.2s, background 0.2s;
 }
-.dark-mode .contact-form textarea:focus,
-.dark-mode .contact-form input:focus {
+.dark-mode .connect-form textarea:focus,
+.dark-mode .connect-form input:focus {
   background: #404052 !important;
   border-color: #a78bfa !important;
   box-shadow: 0 0 0 2px #a78bfa33, 0 4px 16px 0 rgba(0,0,0,0.10);
 }
-.dark-mode .contact-form {
+.dark-mode .connect-form {
   background: #2d2e36 !important;
   color: #fff !important;
   border-radius: 16px;
