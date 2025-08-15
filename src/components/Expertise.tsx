@@ -38,8 +38,8 @@ function Expertise() {
 
                 <div className="skill">
                     <FontAwesomeIcon icon={faReact} size="3x"/>
-                    <h3>Full-Stack & Backend Engineering</h3>
-                    <p>Experienced in designing and deploying large-scale, distributed full-stack applications serving millions of users with capable of handling 1,500+ requests per second.</p>
+                    <h3>Full-Stack Engineering & System designing</h3>
+                    <p>Experienced in developing, designing, and deploying large-scale, distributed full-stack applications from scratch, following best engineering practices and design patterns, serving millions of users and handling over 1.5k requests per second.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech Stack:</span>
                         {stackFull.map((label) => <Chip key={label} className='chip' label={label} />)}
@@ -49,7 +49,7 @@ function Expertise() {
                 <div className="skill">
                     <FontAwesomeIcon icon={faDocker} size="3x"/>
                     <h3>Software Engineering, Cloud & DevOps</h3>
-                    <p>Experienced in managing the SDLC with strong expertise in CI/CD, containerization, and cloud deployments using AWS and Kubernetes, following best engineering practices.</p>
+                    <p>Experienced in managing the full SDLC, containerization, and cloud deployments, ensuring scalability, smooth maintenance, and performance optimization.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech Stack:</span>
                         {stackCloud.map((label) => <Chip key={label} className='chip' label={label} />)}
