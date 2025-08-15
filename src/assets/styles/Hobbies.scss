@@ -1,0 +1,102 @@
+.dark-mode .hobbies-grid h1 {
+  color: var(--text-color, #f3f3f7) !important;
+}
+.dark-mode .hobby-card {
+  background: #2d2e36 !important;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.04);
+  border: none;
+}
+.dark-mode .hobby-body h3 {
+  color: var(--text-color, #eaeaf0) !important;
+}
+.dark-mode .hobby-body p {
+  color: #c2c3c8 !important;
+}
+.hobbies-grid {
+  display: grid;
+  gap: 1.2rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  margin-top: 0.75rem;
+}
+
+.hobby-card {
+  background: var(--card-bg, #ffffff);
+  border: 1px solid #e6e6e6;
+  border-radius: 14px;
+  padding: 1rem .95rem 1.05rem;
+  display: flex;
+  align-items: flex-start;
+  gap: .85rem;
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow .25s ease, transform .25s ease, border-color .3s ease;
+}
+
+.hobby-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(80,0,202,0.06), rgba(80,0,202,0));
+  opacity: 0;
+  transition: opacity .35s ease;
+  pointer-events: none;
+}
+
+.hobby-card:hover, .hobby-card:focus-within {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 18px -4px rgba(0,0,0,0.12), 0 2px 6px -1px rgba(0,0,0,0.06);
+  border-color: #d8d8d8;
+}
+
+.hobby-card:hover::before, .hobby-card:focus-within::before {
+  opacity: 1;
+}
+
+.hobby-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 11px;
+  background: #f4f4f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  color: #5000ca;
+  flex-shrink: 0;
+  box-shadow: inset 0 0 0 1px #e5e5e9;
+}
+
+.dark-mode .hobby-card {
+  background: #111216;
+  border-color: #27282c;
+}
+.dark-mode .hobby-card:hover {
+  border-color: #34353a;
+}
+.dark-mode .hobby-icon {
+  background: #1e1f24;
+  color: #a78bfa;
+  box-shadow: inset 0 0 0 1px #2c2d30;
+}
+
+.hobby-body h3 {
+  margin: 0 0 .25rem;
+  font-size: 1.02rem;
+  font-weight: 600;
+}
+
+.hobby-body p {
+  margin: 0;
+  font-size: .88rem;
+  line-height: 1.3;
+  color: #3f4045;
+}
+.dark-mode .hobby-body p { color: #c2c3c8; }
+
+@media (max-width: 560px) {
+  .hobby-card { padding: .85rem .8rem .9rem; }
+  .hobby-icon { width: 42px; height: 42px; font-size: 1.2rem; }
+  .hobby-body h3 { font-size: .95rem; }
+  .hobby-body p { font-size: .8rem; }
+}

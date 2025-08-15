@@ -1,3 +1,18 @@
+body.dark-mode, .dark-mode body {
+    background: #282a36 !important;
+}
+.dark-mode h1, 
+.dark-mode h2, 
+.dark-mode h3, 
+.dark-mode h4, 
+.dark-mode h5,
+.dark-mode .about-section .content h1,
+.dark-mode .about-section .content p {
+    color: var(--text-color, #f3f3f7) !important;
+}
+html, body {
+    font-family: 'Poppins', 'Segoe UI', 'Helvetica Neue', Arial, 'Liberation Sans', sans-serif !important;
+}
 .dark-mode .about-section {
     background-color: rgba(0, 0, 0, 0.2);
 }

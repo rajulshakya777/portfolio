@@ -17,30 +17,13 @@ function Main() {
           <div className="social_icons">
             <a href="https://github.com/rajulshakya777" target="_blank" rel="noreferrer" aria-label="GitHub"><GitHubIcon/></a>
             <a href="https://www.linkedin.com/in/rajul-shakywar/" target="_blank" rel="noreferrer" aria-label="LinkedIn"><LinkedInIcon/></a>
-            <a
-              href="https://raw.githubusercontent.com/rajulshakya777/my-portfolio/master/react-portfolio-template/existing-portfolio/Rajul_shakywar_resume.pdf"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="Resume"
-            >
-              <DescriptionIcon/>
-            </a>
           </div>
           <h1>Rajul Shakywar</h1>
-          <p>Software Engineer · AI + Full‑Stack</p>
-          <p>Omaha, NE · <a href="mailto:rshakywar@unomaha.edu">rshakywar@unomaha.edu</a></p>
+          <p>Software Engineer (Full‑Stack) | GenAI</p>
 
           <div className="mobile_social_icons">
             <a href="https://github.com/rajulshakya777" target="_blank" rel="noreferrer" aria-label="GitHub"><GitHubIcon/></a>
             <a href="https://www.linkedin.com/in/rajul-shakywar/" target="_blank" rel="noreferrer" aria-label="LinkedIn"><LinkedInIcon/></a>
-            <a
-              href="https://raw.githubusercontent.com/rajulshakya777/my-portfolio/master/react-portfolio-template/existing-portfolio/Rajul_shakywar_resume.pdf"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="Resume"
-            >
-              <DescriptionIcon/>
-            </a>
           </div>
         </div>
       </div>

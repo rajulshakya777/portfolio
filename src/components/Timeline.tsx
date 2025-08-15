@@ -42,9 +42,9 @@ const JOURNEY: JourneyItem[] = [
   logo: '/professional-journey/Sera_logo.jpeg',
     highlight: 'Private AI infrastructure (LLM fine‑tuning on CMMC) + optimized RAG/CAG (policy retrieval latency ↓60%).',
     details: [
-      'Building private AI infrastructure for DoD contractors by fine‑tuning an LLM on CMMC compliance standards.',
-  'Developing a Retrieval- & Context-Augmented Generation (RAG/CAG) system leveraging internal Obsidian knowledge to automate auditing and cut policy retrieval latency by 60% over a structured knowledge base.',
-      'Engineering cross‑functional, CMMC‑compliant WinDev applications to meet DoD standards.'
+      'Built private AI infrastructure for DoD contractors by fine-tuning LLMs on CMMC compliance standards.',
+      'Designed and deployed RAG/CAG systems leveraging internal Obsidian knowledge to automate audits, reducing policy retrieval latency by 60%.',
+      'Engineered CMMC-compliant WinDev applications aligned with DoD requirements.'
     ]
   },
   {
@@ -56,9 +56,8 @@ const JOURNEY: JourneyItem[] = [
   logo: '/professional-journey/assembli_ai_logo.jpeg',
     highlight: 'Cut construction pricing & proposal time from 50+ hours to minutes via an LLM pipeline.',
     details: [
-      'Early AI team member; built an end‑to‑end pricing pipeline (extraction, standardization, structuring) with LLMs.',
-      'Reduced cost estimation & proposal generation from 50+ hours to minutes.',
-      'Developed an AI agent for project‑specific Q&A including intelligent material grade selection.'
+      'Developed an end-to-end pricing pipeline (extraction, standardization, structuring) using LLMs, cutting cost estimation and proposal generation from 50+ hours to minutes.',
+      'Created an AI agent for project-specific Q&A, including intelligent material grade selection.'
     ]
   },
   {
@@ -70,9 +69,8 @@ const JOURNEY: JourneyItem[] = [
   logo: '/professional-journey/skyrang-logo.png',
     highlight: 'Architected & launched an online decoration services platform (700+ users across 3 cities).',
     details: [
-      'Technical co‑founder: owned architecture & development of the full platform (content, orders, admin modules).',
-      'Stack: Java, JSP/Servlets, Hibernate, MySQL, JavaScript.',
-      'Deployed & managed on AWS; scaled to 700+ users across 3 cities.'
+      'Architected and developed the entire e-commerce platform (content, orders, admin modules) using Java, JSP/Servlets, Hibernate, MySQL, JavaScript, deployed and managed on AWS.',
+      'Scaled platform to 700+ active users across 3 cities in India.'
     ]
   },
   {
@@ -84,8 +82,7 @@ const JOURNEY: JourneyItem[] = [
   logo: '/professional-journey/uno-logo.png',
     highlight: 'Optimized distributed neural network training across a 5‑GPU Kubernetes cluster.',
     details: [
-      'Implemented distributed training methods (e.g., CIPHAR) across 5 GPU nodes in Kubernetes.',
-      'Fine‑tuned large language models for advanced NLP tasks.'
+      'Optimized distributed neural network training across a 5-GPU Kubernetes cluster, implementing methods like CIPHAR for performance gains.'
     ]
   },
   {
@@ -97,10 +94,10 @@ const JOURNEY: JourneyItem[] = [
   logo: '/professional-journey/jio-logo.png',
     highlight: 'Centralized cache (CCMS 800GB, 1.5K RPS) + feature toggling tool (CLT ↓30%) & cache dashboard for JioMart.',
     details: [
-      'Front-end: Designed and implemented a dashboard that efficiently managed the JioMart cache cluster handling millions of daily requests.',
-      'Backend: Led end-to-end Distributed Cache-as-a-Service proof of concept using Redis, including an interactive UI for usability.',
-      'Backend: Reduced Change Lead Time (CLT) by 30% by implementing a feature toggling tool enabling independent deployments and streamlining releases.',
-      'Conducted 15+ SDE interviews: interviewed and evaluated SDE I, II, and III candidates, supporting JioMart engineering talent growth.'
+      'Frontend: Designed and implemented a dashboard managing distributed Redis cache clusters handling millions of daily requests.',
+      'Backend: Led development of Distributed Cache-as-a-Service POC with Redis, including an interactive UI for usability.',
+      'Reduced Change Lead Time by 30% via a feature toggling tool enabling independent deployments and streamlined releases.',
+      'Conducted 15+ technical interviews (SDE I, II, III), contributing to engineering team growth.'
     ]
   },
   {
@@ -112,8 +109,7 @@ const JOURNEY: JourneyItem[] = [
   logo: '/professional-journey/techvolt-logo.jpeg',
     highlight: 'Used ML to predict used car prices (R² = 0.7101).',
     details: [
-      'Predicted second/third‑hand car prices using mileage, fuel type, engine capacity & other features.',
-      'Achieved an R² score of 0.7101 leveraging ML modeling & feature engineering.'
+      'Predicted second/third-hand car prices using ML modeling & feature engineering, achieving R² = 0.7101.'
     ]
   },
   {
@@ -125,8 +121,7 @@ const JOURNEY: JourneyItem[] = [
   logo: '/professional-journey/vyorius-logo.jpeg',
     highlight: 'Analyzed geospatial data to propose 150+ optimal drone hub and station locations.',
     details: [
-      'Applied ML & geospatial analysis to locate 150+ optimal drone hubs across the Andaman & Nicobar Islands.',
-      'Integrated government geospatial datasets (hospitals, power stations, blood banks, population sparsity).'
+      'Applied ML & geospatial analysis to determine 150+ optimal drone hub locations in the Andaman & Nicobar Islands using government datasets (hospitals, power stations, blood banks, population sparsity).'
     ]
   }
 ];
@@ -135,7 +130,7 @@ function Timeline() {
   return (
     <div id="history">
       <div className="items-container">
-        <h1>Professional Journey</h1>
+  <h1>Career</h1>
         <VerticalTimeline>
           {JOURNEY.map(exp => (
             <VerticalTimelineElement

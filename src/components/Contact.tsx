@@ -1,112 +1,108 @@
-import React, { useRef, useState } from 'react';
+
 import '../assets/styles/Contact.scss';
-// import emailjs from '@emailjs/browser';
-import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
-import SendIcon from '@mui/icons-material/Send';
-import TextField from '@mui/material/TextField';
+
 
 function Contact() {
-
-  const [name, setName] = useState<string>('');
-  const [email, setEmail] = useState<string>('');
-  const [message, setMessage] = useState<string>('');
-
-  const [nameError, setNameError] = useState<boolean>(false);
-  const [emailError, setEmailError] = useState<boolean>(false);
-  const [messageError, setMessageError] = useState<boolean>(false);
-
-  const form = useRef();
-
-  const sendEmail = (e: any) => {
-    e.preventDefault();
-
-    setNameError(name === '');
-    setEmailError(email === '');
-    setMessageError(message === '');
-
-    /* Uncomment below if you want to enable the emailJS */
-
-    // if (name !== '' && email !== '' && message !== '') {
-    //   var templateParams = {
-    //     name: name,
-    //     email: email,
-    //     message: message
-    //   };
-
-    //   console.log(templateParams);
-    //   emailjs.send('service_id', 'template_id', templateParams, 'api_key').then(
-    //     (response) => {
-    //       console.log('SUCCESS!', response.status, response.text);
-    //     },
-    //     (error) => {
-    //       console.log('FAILED...', error);
-    //     },
-    //   );
-    //   setName('');
-    //   setEmail('');
-    //   setMessage('');
-    // }
-  };
-
+  // Use Formspree endpoint for direct HTML POST
+  const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mnnzrowy';
   return (
     <div id="contact">
       <div className="items-container">
         <div className="contact_wrapper">
           <h1>Contact</h1>
-          <p>Open to software, AI/ML, and backend roles. Prefer email: <a href="mailto:rshakywar@unomaha.edu">rshakywar@unomaha.edu</a></p>
-          <Box
-            ref={form}
-            component="form"
-            noValidate
+          <p className="contact-instructions">Reach me at <a href="mailto:rshakywar@nebraska.edu">rshakywar@nebraska.edu</a> or through the form.</p>
+          <form
+            className="contact-form custom-contact-form full-width-form"
+            action={FORMSPREE_ENDPOINT}
+            method="POST"
             autoComplete="off"
-            className='contact-form'
+            style={{
+              background: '#fff',
+              padding: 24,
+              borderRadius: 12,
+              boxShadow: '0 2px 12px 0 rgba(0,0,0,0.07)',
+              width: '100%',
+              margin: 0,
+              display: 'flex',
+              flexDirection: 'column',
+              gap: 18
+            }}
           >
-            <div className='form-flex'>
-              <TextField
-                required
-                id="outlined-required"
-                label="Your Name"
-                placeholder="What's your name?"
-                value={name}
-                onChange={(e) => {
-                  setName(e.target.value);
-                }}
-                error={nameError}
-                helperText={nameError ? "Please enter your name" : ""}
-              />
-              <TextField
-                required
-                id="outlined-required"
-                label="Email / Phone"
-                placeholder="How can I reach you?"
-                value={email}
-                onChange={(e) => {
-                  setEmail(e.target.value);
-                }}
-                error={emailError}
-                helperText={emailError ? "Please enter your email or phone number" : ""}
-              />
-            </div>
-            <TextField
+            <label htmlFor="name" className="contact-label">Your Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
               required
-              id="outlined-multiline-static"
-              label="Message"
-              placeholder="Send me any inquiries or questions"
-              multiline
-              rows={10}
-              className="body-form"
-              value={message}
-              onChange={(e) => {
-                setMessage(e.target.value);
+              placeholder="What's your name?"
+              style={{
+                padding: '12px 10px',
+                fontSize: 16,
+                border: '1.5px solid #bbb',
+                borderRadius: 6,
+                color: '#181818',
+                background: '#fff',
+                marginBottom: 10
               }}
-              error={messageError}
-              helperText={messageError ? "Please enter the message" : ""}
             />
-            <Button variant="contained" endIcon={<SendIcon />} onClick={sendEmail}>
+            <label htmlFor="email" className="contact-label">Email / Phone</label>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              required
+              placeholder="Enter your email address or phone number"
+              pattern={
+                // Email: simple regex, Phone: 10-15 digits, optional +, spaces, dashes, parentheses
+                "(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)|(^[+]?[(]?[0-9]{1,4}[)]?[-\s0-9]{7,15}$)"
+              }
+              title="Please enter a valid email address or phone number."
+              style={{
+                padding: '12px 10px',
+                fontSize: 16,
+                border: '1.5px solid #bbb',
+                borderRadius: 6,
+                color: '#181818',
+                background: '#fff',
+                marginBottom: 10
+              }}
+            />
+            <label htmlFor="message" className="contact-label">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              required
+              placeholder="Send me any inquiries or questions"
+              rows={8}
+              style={{
+                padding: '12px 10px',
+                fontSize: 16,
+                border: '1.5px solid #bbb',
+                borderRadius: 6,
+                color: '#181818',
+                background: '#fff',
+                marginBottom: 10,
+                resize: 'vertical',
+                minHeight: 120
+              }}
+            />
+            <button
+              type="submit"
+              style={{
+                background: '#6c63ff',
+                color: '#fff',
+                border: 'none',
+                borderRadius: 6,
+                padding: '12px 0',
+                fontWeight: 700,
+                fontSize: 16,
+                cursor: 'pointer',
+                marginTop: 8
+              }}
+            >
               Send
-            </Button>
-          </Box>
+            </button>
+          </form>
         </div>
       </div>
     </div>

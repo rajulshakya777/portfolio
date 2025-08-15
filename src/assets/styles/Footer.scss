@@ -1,3 +1,9 @@
+footer p {
+    color: #181818;
+}
+.dark-mode footer p {
+    color: #fff !important;
+}
 footer {
     text-align: center;
     padding-top: 50px;

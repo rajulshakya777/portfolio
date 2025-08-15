@@ -1,27 +1,32 @@
+/* Force all text in career/timeline cards to white in dark mode */
+.dark-mode .vertical-timeline-element-content,
+.dark-mode .vertical-timeline-element-content *,
+.dark-mode .vertical-timeline-element-content h1,
+.dark-mode .vertical-timeline-element-content h2,
+.dark-mode .vertical-timeline-element-content h3,
+.dark-mode .vertical-timeline-element-content h4,
+.dark-mode .vertical-timeline-element-content h5,
+.dark-mode .vertical-timeline-element-content p,
+.dark-mode .vertical-timeline-element-content span,
+.dark-mode .vertical-timeline-element-content li,
+.dark-mode .vertical-timeline-element-content a {
+    color: #fff !important;
+    text-shadow: none !important;
+}
+/* Dark mode card background for career/timeline cards */
+.dark-mode .vertical-timeline-element-content {
+    background: #2d2e36 !important;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.04);
+}
+.dark-mode .vertical-timeline-element .vertical-timeline-element-date {
+    color: #bcbcc2 !important;
+}
 .vertical-timeline span {
     color: white;
     font-family: 'Courier Prime', monospace;
 }
 
-.vertical-timeline p {
-    color: rgb(39, 40, 34);
-}
-
-.vertical-timeline-element p {
-    color: rgb(39, 40, 34);
-}
-
-.vertical-timeline-element h3 {
-    color: rgb(39, 40, 34);
-}
-
-.vertical-timeline-element h4 {
-    color: rgb(39, 40, 34);
-}
-
-.vertical-timeline-element span {
-    color: rgb(39, 40, 34);
-}
 
 .vertical-timeline-element .vertical-timeline-element-date {
     color: white;
@@ -62,6 +67,9 @@
     color: inherit; /* keep same text color */
     text-decoration: none; /* no highlight by default */
     font-weight: inherit; /* normal weight */
+}
+.dark-mode .journey-item .company-link {
+    color: #fff !important;
 }
 
 .journey-item .company-link:hover,

@@ -1,3 +1,25 @@
+/* Force all text in education cards to white in dark mode */
+.dark-mode .education-section .edu-card,
+.dark-mode .education-section .edu-card *,
+.dark-mode .education-section .edu-card h1,
+.dark-mode .education-section .edu-card h2,
+.dark-mode .education-section .edu-card h3,
+.dark-mode .education-section .edu-card h4,
+.dark-mode .education-section .edu-card h5,
+.dark-mode .education-section .edu-card p,
+.dark-mode .education-section .edu-card span,
+.dark-mode .education-section .edu-card li,
+.dark-mode .education-section .edu-card a {
+  color: #fff !important;
+  text-shadow: none !important;
+}
+/* Dark mode card background for education cards */
+.dark-mode .education-section .edu-card {
+  background: #2d2e36 !important;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.04);
+  border: none;
+}
 .education-section {
   padding: 4rem 0;
   background: linear-gradient(180deg, rgba(80,0,202,0.06), rgba(0,0,0,0));

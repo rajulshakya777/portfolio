@@ -1,3 +1,149 @@
+.contact-label {
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #181818;
+}
+.dark-mode .contact-label {
+  color: #fff !important;
+}
+.contact-form,
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+  background: #fff !important;
+  color: #181818 !important;
+  border-color: #bbb !important;
+  box-shadow: none !important;
+}
+.contact-form input,
+.contact-form textarea {
+  background: #fff !important;
+  color: #181818 !important;
+  border: 1.5px solid #bbb !important;
+}
+.contact-form button {
+  background: #6c63ff !important;
+  color: #fff !important;
+  border: none !important;
+}
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #888 !important;
+  opacity: 1 !important;
+}
+.contact-instructions a {
+  color: inherit !important;
+  text-decoration: underline !important;
+}
+.contact-instructions a {
+  color: inherit !important;
+}
+.contact-instructions {
+  color: #181818;
+}
+.dark-mode .contact-instructions {
+  color: #fff !important;
+}
+.dark-mode .contact_wrapper h1 {
+  color: var(--text-color, #f3f3f7) !important;
+}
+.dark-mode .contact-form textarea,
+.dark-mode .contact-form input {
+  color: #fff !important;
+  background: #353542 !important;
+  border: 1.5px solid #444556 !important;
+  border-radius: 8px !important;
+  box-shadow: 0 4px 16px 0 rgba(0,0,0,0.10), 0 1.5px 0 0 #444556;
+  transition: box-shadow 0.2s, border-color 0.2s, background 0.2s;
+}
+.dark-mode .contact-form textarea:focus,
+.dark-mode .contact-form input:focus {
+  background: #404052 !important;
+  border-color: #a78bfa !important;
+  box-shadow: 0 0 0 2px #a78bfa33, 0 4px 16px 0 rgba(0,0,0,0.10);
+}
+.dark-mode .contact-form {
+  background: #2d2e36 !important;
+  color: #fff !important;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.04);
+}
+/* GLOBAL OVERRIDE for MUI input/textarea in light mode */
+body.light-mode input,
+body.light-mode textarea,
+body.light-mode .MuiInputBase-input,
+body.light-mode .MuiOutlinedInput-input,
+body.light-mode .MuiInputBase-inputMultiline,
+body.light-mode .MuiOutlinedInput-root,
+body.light-mode .MuiOutlinedInput-root textarea,
+body.light-mode .MuiOutlinedInput-root input {
+  color: #181818 !important;
+  background: #fff !important;
+  caret-color: #181818 !important;
+}
+body.light-mode .MuiInputLabel-root,
+body.light-mode label {
+  color: #222 !important;
+}
+body.light-mode .MuiInputBase-input::placeholder {
+  color: #888 !important;
+  opacity: 1;
+}
+/* AGGRESSIVE OVERRIDE: Force black text and white background for all inputs and textareas in light mode */
+.light-mode input,
+.light-mode textarea,
+.light-mode .MuiInputBase-input,
+.light-mode .MuiOutlinedInput-input,
+.light-mode .MuiInputBase-inputMultiline,
+.light-mode .MuiOutlinedInput-root,
+.light-mode .MuiOutlinedInput-root textarea,
+.light-mode .MuiOutlinedInput-root input {
+  color: #181818 !important;
+  background: #fff !important;
+  caret-color: #181818 !important;
+}
+.light-mode .MuiInputLabel-root,
+.light-mode label {
+  color: #222 !important;
+}
+.light-mode .MuiInputBase-input::placeholder {
+  color: #888 !important;
+  opacity: 1;
+}
+.light-mode .MuiOutlinedInput-root,
+.light-mode .MuiOutlinedInput-root.Mui-focused,
+.light-mode .MuiOutlinedInput-root textarea,
+.light-mode .MuiOutlinedInput-root input {
+  background: #fff !important;
+  color: #181818 !important;
+}
+.light-mode .MuiInputBase-inputMultiline {
+  background: #fff !important;
+  color: #181818 !important;
+}
+.light-mode .MuiInputLabel-root {
+  color: #222 !important;
+}
+.light-mode .MuiInputBase-input::placeholder {
+  color: #888 !important;
+  opacity: 1;
+}
+.light-mode .contact-form input,
+.light-mode .contact-form textarea,
+.light-mode .contact-form .MuiInputBase-input,
+.light-mode .contact-form .MuiOutlinedInput-input,
+.light-mode .contact-form .MuiInputLabel-root {
+  color: #181818 !important;
+  background: #fff !important;
+}
+.light-mode .contact-form .MuiOutlinedInput-root {
+  color: #181818 !important;
+  background: #fff !important;
+}
+.light-mode .contact-form .MuiInputBase-input::placeholder {
+  color: #888 !important;
+  opacity: 1;
+}
 .contact_wrapper svg {
   font-size: 1em;
   vertical-align: middle;
@@ -6,6 +152,9 @@
 
 .contact-form {
   padding-top: 20px;
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
 
   button {
     float: right;
@@ -21,6 +170,29 @@
   fieldset {
     background-color: white;
   }
+
+  /* Force dark text for all inputs, textareas, and labels in light mode */
+  input, textarea {
+    color: #181818 !important;
+    background: #fff !important;
+  }
+  .MuiInputLabel-root {
+    color: #222 !important;
+  }
+  .MuiOutlinedInput-root {
+    color: #181818 !important;
+    background: #fff !important;
+  }
+  .MuiInputBase-input::placeholder {
+    color: #888 !important;
+    opacity: 1;
+  }
+}
+
+.full-width-form {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
 }
 
 label {

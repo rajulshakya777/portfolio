@@ -5,39 +5,19 @@ import { faReact, faDocker, faPython } from '@fortawesome/free-brands-svg-icons'
 import Chip from '@mui/material/Chip';
 import '../assets/styles/Expertise.scss';
 
-const labelsFirst = [
-    "Java",
-    "C++",
-    "Python",
-    "JavaScript",
-    "React",
-    "HTML",
-    "CSS",
-    "Bootstrap",
+const stackFull = [
+    'Python','Java','C#','C++','HTML5','CSS','Bootstrap','JavaScript','React.js',
+    'Flask','Spring Boot','ASP.NET','JSP/Servlets','Hibernate','JUnit','Mockito','FastAPI',
+    'MySQL','MongoDB','Redis','Cassandra'
 ];
 
-const labelsSecond = [
-    "Spring Boot",
-    "JSP/Servlets",
-    "Hibernate",
-    "JUnit",
-    "REST APIs",
-    "Kafka",
-    "Git",
-    "Linux",
+const stackAI = [
+    'Machine Learning','Generative AI','LLMs','AI Agents','RAG','CAG','TensorFlow','PyTorch','LangChain','LangGraph','vLLM','Vector Embeddings','Data Analysis','OCR'
 ];
 
-const labelsThird = [
-    "AWS",
-    "Docker",
-    "Kubernetes",
-    "OpenShift",
-    "MySQL",
-    "MongoDB",
-    "Redis",
-    "Cassandra",
-    "Neo4j",
-    "LLMs / GenAI",
+const stackCloud = [
+    'AWS','Docker','Kubernetes','OpenShift','Git','Apache Kafka','RESTful APIs','CI/CD Pipelines','Data Structures & Algorithms',
+    'System Design','OOD','SOLID','Design Patterns','Microservices','Agile'
 ];
 
 function Expertise() {
@@ -47,38 +27,32 @@ function Expertise() {
             <h1>Expertise</h1>
             <div className="skills-grid">
                 <div className="skill">
-                    <FontAwesomeIcon icon={faReact} size="3x"/>
-                    <h3>Full‑Stack & Backend Engineering</h3>
-                    <p>Building scalable services and UIs. Experience handling 1,500+ RPS, centralized caching, and feature flag platforms.</p>
+                    <FontAwesomeIcon icon={faPython} size="3x"/>
+                    <h3>AI, ML & LLMs</h3>
+                    <p>Developing private AI infrastructure, AI agents, and fine-tuned LLMs; implementing RAG and CAG and data pipelines with Claude and OpenAI, helping businesses drive automation and improve organizational efficiency.</p>
                     <div className="flex-chips">
-                        <span className="chip-title">Tech stack:</span>
-                        {labelsFirst.map((label, index) => (
-                            <Chip key={index} className='chip' label={label} />
-                        ))}
+                        <span className="chip-title">Tech Stack:</span>
+                        {stackAI.map((label) => <Chip key={label} className='chip' label={label} />)}
+                    </div>
+                </div>
+
+                <div className="skill">
+                    <FontAwesomeIcon icon={faReact} size="3x"/>
+                    <h3>Full-Stack & Backend Engineering</h3>
+                    <p>Experienced in designing and deploying large-scale, distributed full-stack applications serving millions of users with capable of handling 1,500+ requests per second.</p>
+                    <div className="flex-chips">
+                        <span className="chip-title">Tech Stack:</span>
+                        {stackFull.map((label) => <Chip key={label} className='chip' label={label} />)}
                     </div>
                 </div>
 
                 <div className="skill">
                     <FontAwesomeIcon icon={faDocker} size="3x"/>
-                    <h3>DevOps & Cloud</h3>
-                    <p>CI/CD, containerization, and cloud deployments on AWS and Kubernetes (incl. OpenShift).</p>
+                    <h3>Software Engineering, Cloud & DevOps</h3>
+                    <p>Experienced in managing the SDLC with strong expertise in CI/CD, containerization, and cloud deployments using AWS and Kubernetes, following best engineering practices.</p>
                     <div className="flex-chips">
-                        <span className="chip-title">Tech stack:</span>
-                        {labelsSecond.map((label, index) => (
-                            <Chip key={index} className='chip' label={label} />
-                        ))}
-                    </div>
-                </div>
-
-                <div className="skill">
-                    <FontAwesomeIcon icon={faPython} size="3x"/>
-                    <h3>AI, ML & LLMs</h3>
-                    <p>Built agents and data pipelines with LLMs (Claude/OpenAI); experience with classical ML for research and analytics.</p>
-                    <div className="flex-chips">
-                        <span className="chip-title">Tech stack:</span>
-                        {labelsThird.map((label, index) => (
-                            <Chip key={index} className='chip' label={label} />
-                        ))}
+                        <span className="chip-title">Tech Stack:</span>
+                        {stackCloud.map((label) => <Chip key={label} className='chip' label={label} />)}
                     </div>
                 </div>
             </div>

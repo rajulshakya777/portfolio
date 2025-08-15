@@ -1,3 +1,33 @@
+.dark-mode .skills-container .skill p {
+    color: var(--text-color, #eaeaf0) !important;
+}
+.dark-mode .skills-container .skills-description {
+    color: var(--text-color, #eaeaf0) !important;
+}
+.dark-mode .chip {
+    background: #f0f0f3 !important;
+    color: #18191c !important;
+    border-color: #e0e0e0 !important;
+}
+.dark-mode .skills-container {
+    padding: 5% 10%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+    svg {
+        color: white;
+    }
+}
+
+.dark-mode .skills-container .skills-grid .skill {
+    background: #2d2e36 !important;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.04);
+    padding: 24px 20px;
+    box-sizing: border-box;
+}
+
 .skills-container {
     padding: 5% 10%;
     display: flex;
@@ -18,6 +48,8 @@
 .skills-container .skills-grid .skill {
     align-items: center;
     text-align: left;
+    padding: 24px 20px;
+    box-sizing: border-box;
 }
   
 .chip {
