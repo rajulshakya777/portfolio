@@ -12,8 +12,8 @@ function Project() {
                 <p>An online decoration service web app from scratch, deployed on AWS, currently serving 700+ users across three cities in India.</p>
             </div>
             <div className="project">
-                <a href="https://agenverse.streamlit.app" target="_blank" rel="noreferrer"><img src={`${process.env.PUBLIC_URL}/projects/agentverse.jpg`} className="zoom" alt="Agentverse" width="100%"/></a>
-                <a href="https://agenverse.streamlit.app" target="_blank" rel="noreferrer"><h2>Agentverse</h2></a>
+                <a href="https://agent-verse.streamlit.app" target="_blank" rel="noreferrer"><img src={`${process.env.PUBLIC_URL}/projects/agentverse.jpg`} className="zoom" alt="Agentverse" width="100%"/></a>
+                <a href="https://agent-verse.streamlit.app" target="_blank" rel="noreferrer"><h2>Agentverse</h2></a>
                 <p>AI-powered underwriting co-pilot for insurance, managing broker queries, renewals, and amendments with smart decision-making achieving up to 40% faster policy processing, increasing broker satisfication.</p>
             </div>
             <div className="project">
