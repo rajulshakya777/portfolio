@@ -29,8 +29,7 @@ function Expertise() {
                 <div className="skill">
                     <FontAwesomeIcon icon={faPython} size="3x"/>
                     <h3>AI, ML & LLMs</h3>
-                    <p>Developing private AI infrastructure, building AI agents, fine-tuning LLMs, implementing RAG and CAG, and leveraging<br />
-LLM inference APIs and helping businesses drive automation, streamline processes, and improve organizational efficiency.</p>
+                    <p>Developing private AI infrastructure, building AI agents, fine-tuning LLMs, implementing RAG and CAG, and leveraging LLM inference APIs and helping businesses drive automation, streamline processes, and improve organizational efficiency.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech Stack:</span>
                         {stackAI.map((label) => <Chip key={label} className='chip' label={label} />)}
