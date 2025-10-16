@@ -35,21 +35,21 @@ function formatHighlight(text: string) {
 const JOURNEY: JourneyItem[] = [
   {
     date: 'May 2025 – Present',
-    role: 'Software Engineer (GenAI)',
+    role: 'Research and Development (GenAI)',
     company: 'Sera Digital Corp',
-  location: 'Remote',
+  location: 'Omaha, NE (USA)',
   companyUrl: 'https://www.seradigital.com/',
   logo: '/professional-journey/Sera_logo.jpeg',
     highlight: 'Private AI infrastructure (LLM fine‑tuning on CMMC) + optimized RAG/CAG (policy retrieval latency ↓60%).',
     details: [
-      'Built private AI infrastructure for DoD contractors by fine-tuning LLMs on CMMC compliance standards.',
+      'Built private AI infrastructure for contractors by fine-tuning LLMs on CMMC compliance standards.',
       'Designed and deployed RAG/CAG systems leveraging internal Obsidian knowledge to automate audits, reducing policy retrieval latency by 60%.',
       'Engineered CMMC-compliant WinDev applications aligned with DoD requirements.'
     ]
   },
   {
     date: 'Jan 2025 – May 2025',
-    role: 'AI & Software Engineer',
+    role: 'AI & Software Engineer Intern',
     company: 'Assembli AI',
   location: 'Remote',
   companyUrl: 'https://www.assembli.ai/',
