@@ -35,7 +35,7 @@ function formatHighlight(text: string) {
 const JOURNEY: JourneyItem[] = [
   {
     date: 'May 2025 – Present',
-    role: 'Research and Development (GenAI)',
+    role: 'Software Engineer (GenAI)',
     company: 'Sera Digital Corp',
   location: 'Omaha, NE (USA)',
   companyUrl: 'https://www.seradigital.com/',
