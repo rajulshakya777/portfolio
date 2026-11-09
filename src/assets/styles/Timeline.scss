@@ -47,7 +47,7 @@
 }
 
 .journey-item:hover .journey-details, .journey-item:focus-within .journey-details {
-    max-height: 500px; /* enough to show bullets */
+    max-height: 1000px; /* enough to show bullets */
     opacity: 1;
     margin-top: 0.5rem;
 }

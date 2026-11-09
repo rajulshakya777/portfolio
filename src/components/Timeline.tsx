@@ -40,11 +40,11 @@ const JOURNEY: JourneyItem[] = [
   location: 'Omaha, NE (USA)',
   companyUrl: 'https://www.seradigital.com/',
   logo: '/professional-journey/Sera_logo.jpeg',
-    highlight: 'Built xv (ZFS-based AI sandboxing & version control) + private Llama Scout CMMC assistant on 8×H100 (policy retrieval latency ↓60%).',
+    highlight: 'Built xv (ZFS-based AI agent sandboxing) + private Llama Scout CMMC assistant on 8×H100.',
     details: [
-      'Built xv, a custom ZFS-based, Git-like version control and AI sandboxing system that lets multiple AI agents operate in secure, isolated sandboxes while tracking every operation and change at scale through snapshot-native versioning, supporting accountable AI-driven development and military-grade auditability.',
-      'Built a private AI compliance assistant for contractors by deploying Llama Scout on vLLM across 8 H100 GPUs, leveraging Context-Augmented Generation (CAG), KV-cache reuse, and a 4M-token context window to audit contractor compliance against CMMC standards using large company-specific Obsidian vaults.',
-      'Reduced policy retrieval latency by 60% through an optimized RAG + CAG architecture over a structured knowledge base.'
+      'Built xv, a ZFS-based, Git-like version control and AI sandboxing system that runs multiple AI agents in isolated sandboxes, tracking every change via snapshots for military-grade auditability.',
+      'Deployed Llama Scout on vLLM across 8 H100 GPUs as a private CMMC compliance assistant, using CAG, KV-cache reuse, and a 4M-token context over company Obsidian vaults.',
+      'Cut policy retrieval latency by 60% with an optimized RAG + CAG architecture.'
     ]
   },
   {
