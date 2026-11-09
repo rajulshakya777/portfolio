@@ -16,7 +16,7 @@ const EDU: EduItem[] = [
   {
     date: 'Jan 2024 – May 2025',
   title: 'University of Nebraska Omaha (NE), USA',
-  subtitle: 'M.S., IT Innovation',
+  subtitle: 'M.S. in Computer and Information Sciences',
     logo: process.env.PUBLIC_URL + '/education-logos/uno-logo.png',
     alt: 'UNO Logo',
   url: 'https://www.unomaha.edu/'
