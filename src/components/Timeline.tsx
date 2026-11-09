@@ -35,16 +35,16 @@ function formatHighlight(text: string) {
 const JOURNEY: JourneyItem[] = [
   {
     date: 'May 2025 – Present',
-    role: 'Software Engineer (GenAI)',
+    role: 'AI Software Engineer',
     company: 'Sera Digital Corp',
   location: 'Omaha, NE (USA)',
   companyUrl: 'https://www.seradigital.com/',
   logo: '/professional-journey/Sera_logo.jpeg',
-    highlight: 'Private AI infrastructure (LLM fine‑tuning on CMMC) + optimized RAG/CAG (policy retrieval latency ↓60%).',
+    highlight: 'Built xv (ZFS-based AI sandboxing & version control) + private Llama Scout CMMC assistant on 8×H100 (policy retrieval latency ↓60%).',
     details: [
-      'Built private AI infrastructure for contractors by fine-tuning LLMs on CMMC compliance standards.',
-      'Designed and deployed RAG/CAG systems leveraging internal Obsidian knowledge to automate audits, reducing policy retrieval latency by 60%.',
-      'Engineered CMMC-compliant WinDev applications aligned with DoD requirements.'
+      'Built xv, a custom ZFS-based, Git-like version control and AI sandboxing system that lets multiple AI agents operate in secure, isolated sandboxes while tracking every operation and change at scale through snapshot-native versioning, supporting accountable AI-driven development and military-grade auditability.',
+      'Built a private AI compliance assistant for contractors by deploying Llama Scout on vLLM across 8 H100 GPUs, leveraging Context-Augmented Generation (CAG), KV-cache reuse, and a 4M-token context window to audit contractor compliance against CMMC standards using large company-specific Obsidian vaults.',
+      'Reduced policy retrieval latency by 60% through an optimized RAG + CAG architecture over a structured knowledge base.'
     ]
   },
   {

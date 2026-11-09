@@ -19,7 +19,7 @@ function Main() {
             <a href="https://www.linkedin.com/in/rajul-shakywar/" target="_blank" rel="noreferrer" aria-label="LinkedIn"><LinkedInIcon/></a>
           </div>
           <h1>Rajul Shakywar</h1>
-          <p>Software Engineer (Full‑Stack) | GenAI</p>
+          <p>AI Software Engineer</p>
 
           <div className="mobile_social_icons">
             <a href="https://github.com/rajulshakya777" target="_blank" rel="noreferrer" aria-label="GitHub"><GitHubIcon/></a>
